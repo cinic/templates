@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'PT Sans'; 
+	src: url('fonts/ptsans.eot'); 
+	src: local('PT Sans'), url('fonts/ptsans.woff') format('woff'),url('fonts/ptsans.ttf') format('truetype'), url('fonts/ptsans.svg#PTSans-Regular') format('svg');
+	}	
+
+@font-face {
+	font-family: 'PT Sans Narrow';
+	src: url('fonts/ptsans_n.eot');
+	src: local('PT Sans Narrow'), url('fonts/ptsans_n.woff') format('woff'),url('fonts/ptsans_n.ttf') format('truetype'), url('fonts/ptsans_n.svg#PTSans-Narrow') format('svg');
+	}
