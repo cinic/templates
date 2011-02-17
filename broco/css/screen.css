@@ -654,3 +654,59 @@ color: red;
 	    -moz-box-shadow:#313131 0 0 6px 3px;
 	    -0-box-shadow:#313131 0 0 6px 3px;
 	    }
+	
+
+/* @Content
+** Trading contitions tabs
+*/
+
+.sub .content .conditions {
+	position:relative; 
+	overflow:hidden;
+	}
+	.sub .content .conditions DT {
+		position:relative; 
+		left:10px; 
+		float:left; 
+		display:inline; 
+		margin-left:4px; 
+		padding:15px 20px; 
+		height:20px; 
+		background:#EAEAEA; 
+		text-align:center; 
+		font-size:18px; 
+		font-family: 'PT Sans'; 
+		cursor:pointer;
+		}
+		.sub .content .conditions DT A {text-decoration:none;}
+		.sub .content .conditions DT.selected {
+			z-index:3; 
+			cursor:auto; 
+			padding-bottom:17px; 
+			background:#FFF; 
+			border:1px solid #000;
+			}
+		.sub .content .conditions DT.tab-bottom {clear:right; cursor:pointer;}
+		.sub .content .conditions DT.tab-bottom.selected {
+			z-index:5;
+			margin-top:-3px;
+			border-top:none;
+			}
+		.sub .content .conditions DT.top-item.selected {border-bottom:none;}
+	.sub .content .conditions DD {
+		position:relative;
+		display:none;
+		float:right;
+		margin:50px 0 0 -100%;
+		padding:20px 0 10px;
+		z-index:2;
+		width:100%;
+		border-top:3px solid #000;
+		border-bottom:3px solid #000;
+		}
+	.sub .content .conditions DD.selected {display:block;}
+		.sub .content .conditions TD:first-child {background:#EBEBEB;}
+		.sub .content .conditions TD {padding:10px; border-color:#A7A7A7;}
+		.sub .content .conditions TH {background:#FFF;}
+	.sub .content .conditions UL {margin:0;}
+		.sub .content .conditions UL LI {list-style-type:none;}
