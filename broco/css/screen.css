@@ -324,7 +324,6 @@ BODY {
     }
   .sub .content BLOCKQUOTE,
   .sub .content Q {
-	border-left:4px solid #919191;
     font-style:italic;
     color:#828282;
     }
