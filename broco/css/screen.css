@@ -576,3 +576,81 @@ color: red;
 		-webkit-border-radius:4px;
 	}
 
+.sub .content .navigation-for-action-or-choice,
+.sub .content .navigation-to-trading-platforms {
+	margin:18px 0;
+	width:720px;
+	}
+	.sub .content .navigation-for-action-or-choice > LI:first-child,
+	.sub .content .navigation-to-trading-platforms > LI:first-child {
+		margin:0;
+	    }
+	.sub .content .navigation-for-action-or-choice > LI:first-child A,
+	.sub .content .navigation-to-trading-platforms > LI:first-child A {
+		background:#B51111;
+	    border-color:#B51111;
+	    color:#FFF;
+	    }
+	.sub .content .navigation-for-action-or-choice LI+LI A,
+	.sub .content .navigation-to-trading-platforms LI+LI A {
+		background:#000;
+	    border-color:#000;
+	    color:#FFF;
+	    }
+	.sub .content .navigation-for-action-or-choice LI+LI+LI A,
+	.sub .content .navigation-to-trading-platforms LI+LI+LI A {
+		background:#555;
+	    border-color:#555;
+	    color:#FFF;
+	    }
+	.sub .content .navigation-for-action-or-choice LI+LI+LI+LI A,
+	.sub .content .navigation-to-trading-platforms LI+LI+LI+LI A {
+		background:#969696;
+	    border-color:#969696;
+	    color:#FFF;
+	    }
+	.sub .content .navigation-for-action-or-choice LI+LI+LI+LI+LI A,
+	.sub .content .navigation-to-trading-platforms LI+LI+LI+LI+LI A {
+		background:#FFF;
+	    border-color:#000;
+	    color:#000;
+	    }
+	.sub .content .navigation-for-action-or-choice LI,
+	.sub .content .navigation-to-trading-platforms LI {
+		float:left;
+	    margin:0 0 18px 20px;
+	    display:inline;
+	    }
+	.sub .content .navigation-for-action-or-choice A {
+		padding:0 10px;
+	    display:table-cell;
+	    width:102px;
+	    height:122px;
+	    font-size:14px;
+	    font-family:'PT Sans', Verdana, Helvetica, sans-serif;
+	    text-align:center;
+	    vertical-align:middle;
+	    border:1px solid;
+	    border-radius:61px;
+	    -webkit-border-radius:61px;
+	    -moz-border-radius:61px;
+	    text-decoration:none;
+	    }
+
+	.sub .content .navigation-to-trading-platforms A {
+		float:left;
+	    display:inline;
+	    padding:5px 10px;
+	    border:1px solid;
+	    border-radius:4px;
+	    -moz-border-radius:4px;
+	    -webkit-border-radius:4px;
+	    text-decoration:none;
+	    }
+	.sub .content .navigation-for-action-or-choice A:hover,
+	.sub .content .navigation-to-trading-platforms A:hover {
+		box-shadow:#313131 0 0 6px 3px;
+	    -webkit-box-shadow:#313131 0 0 6px 3px;
+	    -moz-box-shadow:#313131 0 0 6px 3px;
+	    -0-box-shadow:#313131 0 0 6px 3px;
+	    }
