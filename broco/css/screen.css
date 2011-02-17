@@ -324,9 +324,13 @@ BODY {
     }
   .sub .content BLOCKQUOTE,
   .sub .content Q {
+	border-left:4px solid #919191;
     font-style:italic;
     color:#828282;
     }
+	.sub .content BLOCKQUOTE .author {
+		text-align:right;
+		}
   .sub .content STRONG,
   .sub .content B {font-weight:bold;}
   .sub .content TABLE {
@@ -710,3 +714,30 @@ color: red;
 		.sub .content .conditions TH {background:#FFF;}
 	.sub .content .conditions UL {margin:0;}
 		.sub .content .conditions UL LI {list-style-type:none;}
+/* @Content
+** Personal Brokers Page
+** Brokers vCards
+*/
+.brokers-vcards {
+	
+	}
+	.brokers-vcards .vcard {
+		float:left;
+		margin:0 20px 18px 0;
+		padding:0 0 0 10px;
+		display:inline;
+		width:210px;
+		height:232px;
+		background:#E5E5E5;
+		}
+		.brokers-vcards .vcard .fn {
+			display:block;
+			font-family:'PT Sans Narrow', Verdana, Helvetica, sans-serif;
+			font-size:24px;
+			line-height:36px;
+			}
+		.brokers-vcards .vcard .photo {
+			float:left;
+			margin:10px 10px 10px 0;
+			display:inline;
+			}
