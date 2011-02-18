@@ -169,18 +169,41 @@ BODY {
       }
 	.three-promo-box .box-about {
 		position:relative;
-		left:378px;
+		left:340px;
 		top:18px;
 		display:none;
-		width:222px;
+		width:300px;
 		}
 		.three-promo-box .box-about P {
 			font-size:10px;
 			}
 		.three-promo-box .box-about SPAN {
-			line-height:22px;
+			padding:2px;
+			line-height:20px;
 			background:#FFF;
 			}
+			.three-promo-box .box-about .l {
+				position:relative;
+			}
+			.three-promo-box .box-about .r {
+				position:relative;
+				left:10px;
+			}
+			.three-promo-box .box-about .c {
+				position:relative;
+				left:-5px;
+			}
+		.three-promo-box .box-about NAV {
+			margin:18px 0;
+			}
+		.three-promo-box .box-about NAV A {
+			padding:0 10px;
+			font-size:16px;
+			line-height:36px;
+			color:#FFF;
+			text-transform:uppercase;
+			}
+
   .main .content H2,
   .sub .box H2 {
     float:left;
