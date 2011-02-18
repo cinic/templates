@@ -372,12 +372,13 @@ BODY {
     .sub .content OL LI {
       list-style-type:decimal;
       }
-	/* Numerous Right blocks
-	*/
-	.sub .content .screenshot {
-		float:right;
-		margin-right:-260px;
-		width:240px;
+/* @Content
+** Numerous Right blocks
+*/
+.sub .content .screenshot {
+	float:right;
+	margin-right:-260px;
+	width:240px;
 	}
 
 /* @Layuot
@@ -713,6 +714,7 @@ color: red;
 		.sub .content .conditions TH {background:#FFF;}
 	.sub .content .conditions UL {margin:0;}
 		.sub .content .conditions UL LI {list-style-type:none;}
+
 /* @Content
 ** Personal Brokers Page
 ** Brokers vCards
@@ -740,3 +742,9 @@ color: red;
 			margin:10px 10px 10px 0;
 			display:inline;
 			}
+
+/* @Content
+** News list
+*/
+.news-list LI {list-style-type:none;}
+.page-list LI {display: inline;}
