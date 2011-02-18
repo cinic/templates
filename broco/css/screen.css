@@ -127,6 +127,7 @@ BODY {
       width:326px;
       height:196px;
       background:url(images/promo.jpg) no-repeat -70px 0; /*Delete on production*/
+		cursor:pointer;
       }
     .professional {
       border-right:1px solid #FFF;
@@ -194,9 +195,14 @@ BODY {
 				left:-5px;
 			}
 		.three-promo-box .box-about NAV {
+			float:left;
+			display:inline;
 			margin:18px 0;
+			background:#000;
+			opacity:.7;
 			}
 		.three-promo-box .box-about NAV A {
+			display:block;
 			padding:0 10px;
 			font-size:16px;
 			line-height:36px;

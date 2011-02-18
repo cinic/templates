@@ -1,5 +1,6 @@
 .expanded {
 	width:650px;
+	cursor:auto;
 	}
 	.expanded .box-about {
 		display:block;
