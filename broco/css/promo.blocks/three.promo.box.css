@@ -1,0 +1,21 @@
+.expanded {
+	width:650px;
+	}
+	.expanded .box-about {
+		display:block;
+		}
+.expanded.investor {
+	background-position:0 0;
+	}
+.narrowed {
+	width:164px;
+	}
+	.narrowed.newbie {
+		background-position: -138px -394px;
+		}
+	.narrowed.professional {
+		background-position:-30px -197px;
+		}
+	.narrowed.investor {
+		background-position:-120px 0;
+		}
