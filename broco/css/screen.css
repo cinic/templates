@@ -59,7 +59,7 @@ BODY {
     .header .nav .forms {
       float:left;
       display:inline;
-      margin:0;
+      margin:0 20px 0 0;
       }
     .header .nav li {
       /*float:left;*/
@@ -778,5 +778,5 @@ color: red;
 /* @Content
 ** News list
 */
-.news-list LI {list-style-type:none;}
+.sub .content .news-list LI {list-style-type:none;}
 .page-list LI {display: inline;}
