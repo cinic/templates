@@ -536,13 +536,15 @@ BODY {
 		text-indent:-999em;
 		opacity:.7;
 	}
+	.bread-crumbs .crumb-home:hover {
+		opacity:1;
+	}
 	.bread-crumbs .crumb-link {
 		float:left;
 		color:#555;
 	}
 	.bread-crumbs .crumb-link:hover {
 		text-decoration:none;
-		opacity:1 !important;
 	}
 	.bread-crumbs .crumb-separator {
 		float:left;
