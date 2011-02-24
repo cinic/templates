@@ -225,8 +225,9 @@ BODY {
     }
   .box {float:left;display:inline;}
     .box HEADER {float:left;display:inline;width:100%;}
-  .hr {margin:0 0 18px;width:100%;}
+  .hr {width:100%;}
   .adv {
+	margin:18px 0;
     width:980px;
     height:60px;
     background:url(images/adv.png) no-repeat 0 0;
@@ -311,7 +312,7 @@ BODY {
 	position:relative;
 	float:left;
 	display:inline;
-	margin:0 -740px 0 260px;
+	margin:0 -740px 18px 260px;
 	width:460px;
 }
 	.sub .content HEADER {
@@ -407,7 +408,7 @@ BODY {
 .aside {
 	float:left;
 	display:inline;
-	margin:0 740px 0 0;
+	margin:0 740px 18px 0;
 	width:240px;
 	}
 	.aside .news TIME {
