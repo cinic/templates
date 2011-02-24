@@ -542,7 +542,7 @@ BODY {
 	}
 	.bread-crumbs .crumb-link:hover {
 		text-decoration:none;
-		opacity:1;
+		opacity:1 !important;
 	}
 	.bread-crumbs .crumb-separator {
 		float:left;
