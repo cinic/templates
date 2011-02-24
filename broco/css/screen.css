@@ -534,10 +534,15 @@ BODY {
 		height:16px;
 		background:url(images/icons.png) no-repeat 0 0;
 		text-indent:-999em;
+		opacity:.7;
 	}
 	.bread-crumbs .crumb-link {
 		float:left;
 		color:#555;
+	}
+	.bread-crumbs .crumb-link:hover {
+		text-decoration:none;
+		opacity:1;
 	}
 	.bread-crumbs .crumb-separator {
 		float:left;
