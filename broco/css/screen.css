@@ -521,6 +521,33 @@ BODY {
       line-height:62px;
       }
 
+.bread-crumbs {
+	width:100%;
+	clear:both;
+	color:#555;
+}
+	.bread-crumbs .crumb-home {
+		float:left;
+		display:inline;
+		margin:2px 0;
+		width:16px;
+		height:16px;
+		background:url(images/icons.png) no-repeat 0 0;
+		text-indent:-999em;
+	}
+	.bread-crumbs .crumb-link {
+		float:left;
+		color:#555;
+	}
+	.bread-crumbs .crumb-separator {
+		float:left;
+		display:inline;
+		margin:2px 6px;
+		width:16px;
+		height:16px;
+		background:url(images/icons.png) no-repeat 0 -16px;
+		text-indent:-999em;
+	}
 
 /* @Content
 ** general
