@@ -409,6 +409,7 @@ BODY {
 	float:left;
 	display:inline;
 	margin:0 740px 18px 0;
+	padding:8px 0;
 	width:240px;
 	}
 	.aside .news TIME {
@@ -421,7 +422,6 @@ BODY {
     	margin-left: 35px;
   		}
 	.sub-nav {
-    	padding:8px 0;
     	margin-bottom: 20px;
     	}
     .sub-nav LI {
