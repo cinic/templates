@@ -418,6 +418,9 @@ BODY {
 	padding:8px 0;
 	width:240px;
 	}
+	.aside .news {
+		margin:0 0 20px;
+	}
 	.aside .news TIME {
     	font-size:10px;
     	color:#7D7D7D;
@@ -447,8 +450,9 @@ BODY {
     	font-weight:bold;
     	}
     .sub-nav UL {
-    	padding:10px 12px;
-    	background:#919191;
+		margin-bottom:0;
+    	padding:10px 12px 10px 20px;
+		list-style-type:disc;
     	}  
     .sub-nav LI LI {
 		padding:2px 0;
@@ -462,7 +466,7 @@ BODY {
     	}
     .sub-nav LI.here LI .item {
     	font-weight:normal;
-    	color:#FFF;
+    	color:#444;
 		text-decoration:underline;
     	}
     .sub-nav LI.here LI .item:hover {
