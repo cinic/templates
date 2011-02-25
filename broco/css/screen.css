@@ -425,7 +425,7 @@ BODY {
     	margin-bottom: 20px;
     	}
     .sub-nav LI {
-    	line-height:32px;
+		padding:9px 0;
     	background:url(images/arrow.right.png) no-repeat right 50%;
     	border-bottom:3px solid #000;
     	text-transform:uppercase;
