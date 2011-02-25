@@ -237,6 +237,12 @@ BODY {
     background:url(images/adv.png) no-repeat 0 0;
     clear:both;
     }
+	.adv-240 {
+		margin:18px 0;
+		width:240;
+		height:400;
+		clear:both;
+	}
   .about-us,
   .main .news {
 	margin: 0 18px 18px 0;
