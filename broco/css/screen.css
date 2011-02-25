@@ -239,7 +239,7 @@ BODY {
     }
   .about-us,
   .main .news {
-	margin: 0 18px 0 0;
+	margin: 0 18px 18px 0;
     width:356px;
     height:240px;
     }
@@ -247,6 +247,7 @@ BODY {
       padding:2px 0 18px;
       }
   .awards {
+	margin-bottom:18px;
     width:230px;
     height:240px;
     }
