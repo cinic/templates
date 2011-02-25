@@ -225,7 +225,11 @@ BODY {
     }
   .box {float:left;display:inline;}
     .box HEADER {float:left;display:inline;width:100%;}
-  .hr {width:100%;}
+  .hr {
+	margin:18px 0;
+	width:100%;
+	clear:both;
+	}
   .adv {
 	margin:18px 0;
     width:980px;
@@ -235,6 +239,7 @@ BODY {
     }
   .about-us,
   .main .news {
+	margin: 0 18px 0 0;
     width:356px;
     height:240px;
     }
