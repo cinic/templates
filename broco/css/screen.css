@@ -7,7 +7,7 @@
 
 BODY {
   background:#FFF;
-  font:12px/18px Verdana, Helvetica, Arial, sans-serif;
+  font:12px/18px 'DejaVu Sans', Verdana, sans-serif;
   }
 .header-wrapper {
   margin:0 0 18px;
@@ -714,7 +714,7 @@ color: red;
 	    width:102px;
 	    height:122px;
 	    font-size:14px;
-	    font-family:'PT Sans', Verdana, Helvetica, sans-serif;
+	    font-family:'PT Sans';
 	    text-align:center;
 	    vertical-align:middle;
 	    border:1px solid;
@@ -816,7 +816,7 @@ color: red;
 		}
 		.brokers-vcards .vcard .fn {
 			display:block;
-			font-family:'PT Sans Narrow', Verdana, Helvetica, sans-serif;
+			font-family:'PT Sans Narrow';
 			font-size:24px;
 			line-height:36px;
 			}
@@ -831,3 +831,32 @@ color: red;
 */
 .sub .content .news-list LI {list-style-type:none;}
 .page-list LI {display: inline;}
+
+/* @Content
+** Eco-calendar
+*/
+.ecal-filter SELECT,
+.ecal-filter INPUT {margin-right:5px;}
+.sub .content .events-list {margin-left:54px;}
+	.sub .content .events-list LI {list-style-type:none;}
+	.content .events-list TIME {
+		display: inline-block;
+		margin-left:-54px;
+		width:50px;
+		color:#000;
+		font-weight:700;
+		font-size:12px;
+		text-align:center;
+	}
+	.events-list .importance-1 {background-color:#EAEB10;}
+	.events-list .importance-2 {background-color:#FAAA16;}
+	.events-list .importance-3 {background-color:#DD1D2F;}
+	.events-list .event {display:block;}
+	.events-list .values UL {margin-left:0;}
+	.events-list .values LI {
+		display: inline;
+		list-style-type: none;
+		margin-right: 20px;
+		padding: 5px 0;
+	}
+	.events-list .values IMG {margin: -5px 0;}
