@@ -348,6 +348,16 @@ BODY {
 	.sub .content P {
     	margin:0 0 18px;
     }
+	
+	.platform-box .small,
+	.sub .content .platform-screenshot,
+	.sub .content .cite-photo {
+		float:right;
+		display:inline;
+		margin:-3px -260px 0 20px;
+		width:240px;
+	}
+	
 	.sub .content BLOCKQUOTE,
 	.sub .content Q {
     	font-style:italic;
@@ -641,12 +651,7 @@ color: red;
 	.content .platform-box A {
 		text-decoration:none;
 	}
-	.platform-box .small {
-		float:right;
-		display:inline;
-		margin:-3px -260px 0 20px;
-		width:240px;
-	}
+
 	.platform-box NAV {
 		float:left;
 		display:inline;
