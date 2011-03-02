@@ -363,8 +363,15 @@ BODY {
     	font-style:italic;
     	color:#828282;
     }
+	.sub .content BLOCKQUOTE FIGURE {
+		float:right;
+		margin-left:-160px;
+	}
 	.sub .content BLOCKQUOTE .author {
 		text-align:right;
+	}
+	.sub .content BLOCKQUOTE .author .name {
+		display:block;
 	}
 	.sub .content STRONG,
 	.sub .content B {font-weight:bold;}
