@@ -867,5 +867,6 @@ color: red;
 		list-style-type: none;
 		margin-right: 20px;
 		padding: 5px 0;
+		line-height:24px;
 	}
 	.events-list .values IMG {margin: -5px 0;}
