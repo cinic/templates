@@ -16,4 +16,7 @@ $(function(){
 	});
 	
 	$('.promo-control').children('section').children('p').wrapInner('<span class="c"/>').wrapInner('<span class="r"/>').wrapInner('<span class="l"/>');
+	
+	/* Add Adriver banner in .sub adv-240 */
+	new adriver("sub-adv-240", {sid: 134256, sz: "inside-page-240", pz: 0, bn: 1, bt:52});
 });
