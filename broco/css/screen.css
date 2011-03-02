@@ -363,10 +363,6 @@ BODY {
     	font-style:italic;
     	color:#828282;
     }
-	.sub .content BLOCKQUOTE FIGURE {
-		float:right;
-		margin-left:-160px;
-	}
 	.sub .content BLOCKQUOTE .author {
 		text-align:right;
 	}
