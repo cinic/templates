@@ -19,4 +19,23 @@ $(function(){
 	
 	/* Add Adriver banner in .sub adv-240 */
 	new adriver("sub-adv-240", {sid: 134256, sz: "inside-page-240", pz: 0, bn: 1, bt:52});
+	
+	/* Switcher for trading conditions */
+	if (location.toString().match("/brokerage-services/")) {
+		$("dl#tabs dt").click(function(){
+			$("dl#tabs dt").siblings().removeClass("selected");
+			var sClass = $(this).attr("class").replace("tab-bottom ","").replace("top-item ","");
+			$("dl#tabs dt.tab-bottom."+sClass).addClass("selected");
+			$("dl#tabs dt#"+sClass).next("dd").andSelf().addClass("selected");
+		});
+		
+		if ((location.toString().match("#"))&&!(location.toString().match("comment"))) {
+			var tabName = location.toString().replace(new RegExp ("^(http:\/\/)?([A-Za-z0-9\.\/\-])+([#]){1}"),"");
+			if (location.toString().match(tabName)) {
+				$("dl#tabs dt.top-item").siblings().removeClass("selected");
+				$("dl#tabs dt.tab-bottom").removeClass("selected");
+				$("dl#tabs dt#"+tabName+", dl#tabs dt."+tabName).next("dd").andSelf().addClass("selected");
+			} 
+		}
+	}
 });
