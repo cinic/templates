@@ -346,6 +346,10 @@ BODY {
     	line-height:36px;
     	font-size:18px;
     }
+	.sub .content H3{
+    	line-height:36px;
+    	font-size:16px;
+    }
 	.sub .content P {
     	margin:0 0 18px;
     }
@@ -417,6 +421,13 @@ BODY {
     }
     .sub .content OL LI {
     	list-style-type:decimal;
+    }
+	.sub .content DL {
+    	margin:18px 0;
+    }
+	.sub .content DT {
+    	 font-weight: 700;
+    	margin-bottom: 5px;
     }
 
 /* @Content
