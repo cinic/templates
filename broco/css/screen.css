@@ -885,3 +885,9 @@ color: red;
 		line-height:24px;
 	}
 	.events-list .values IMG {margin: -5px 0;}
+
+/* @Content
+** Feedback form
+*/
+.feedback {display:none;}
+	.feedback-wrap {display:none;}
