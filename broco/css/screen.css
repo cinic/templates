@@ -429,6 +429,10 @@ BODY {
     	 font-weight: 700;
     	margin-bottom: 5px;
     }
+	.sub .content .formit DD {
+    	margin-bottom: 10px;
+    }
+	SPAN.error {display:block;}
 
 /* @Content
 ** Numerous Right blocks
