@@ -819,8 +819,8 @@ color: red;
 		.sub .content .conditions TD:first-child {background:#EBEBEB;}
 		.sub .content .conditions TD {padding:10px; border-color:#A7A7A7;}
 		.sub .content .conditions TH {background:#FFF;}
-	.sub .content .conditions UL {margin:0;}
-		.sub .content .conditions UL LI {list-style-type:none;}
+	.sub .content .conditions TABLE UL {margin:0;}
+		.sub .content .conditions TABLE UL LI {list-style-type:none;}
 
 /* @Content
 ** Personal Brokers Page
