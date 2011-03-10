@@ -891,3 +891,27 @@ color: red;
 */
 .feedback {display:none;}
 	.feedback-wrap {display:none;}
+	
+/* @Content
+** vCard
+*/
+.vcard {
+	float:right;
+	margin:0 -260px 18px 0;
+	padding:0 0 0 10px;
+	display:inline;
+	width:230px;
+	height:232px;
+	background:#E5E5E5;
+	}
+	.vcard .fn {
+		display:block;
+		font-family:'PT Sans Narrow';
+		font-size:24px;
+		line-height:36px;
+		}
+	.vcard .photo {
+		float:left;
+		margin:10px 10px 10px 0;
+		display:inline;
+		}
