@@ -38,6 +38,27 @@ $(function(){
 			} 
 		}
 	}
+	
 	/* Feedback */
+	wh = $(window).height();
+	ww = $(window).width();
+	bh = $("#feedback-wrap").height();
+	bw = $("#feedback-wrap").width();
+	lf = (ww - bw) / 2;
+	tp = (wh - bh) / 2;
+			
+	$('#feedback #form').load('/feedback/ #emailform');
+
+	$('#feedback a').click(function(){
+	$("#feedback-wrap").css({
+			"left" : lf,
+			"top" : tp,
+			"display" : "block"
+		}).animate({opacity: 1}, 1500);
+		return false;
+	});
+	$(".fbackclose").click(function(){
+			$("#feedback-wrap").css({"display" : "none"}).animate({opacity:0}, 1000);
+		});
 	
 });
