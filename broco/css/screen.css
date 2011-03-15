@@ -890,7 +890,6 @@ color: red;
 ** Feedback form
 */
 .feedback {
-	display:none;
 	position: fixed;
     right: 0;
     top: 200px;
@@ -937,7 +936,7 @@ color: red;
 			}
 		.feedback-wrap .fbackphoto {
 			position:absolute;
-			right:0;
+			right:8px;
 			bottom:0;
 			z-index:10;
 		}
