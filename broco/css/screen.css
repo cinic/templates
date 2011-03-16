@@ -356,7 +356,8 @@ BODY {
 	
 	.platform-box .small,
 	.sub .content .platform-screenshot,
-	.sub .content .cite-photo {
+	.sub .content .cite-photo,
+	.sub .content .manager-contacts {
 		float:right;
 		display:inline;
 		margin:-3px -260px 0 20px;
