@@ -887,6 +887,13 @@ color: red;
 	}
 	.events-list .values IMG {margin: -5px 0;}
 
+	.ecalEventBlock {
+		background: #EEE;
+		border-bottom: 3px solid #000;
+		border-top: 3px solid #000;
+		margin-bottom: 15px;
+		padding: 10px 15px;
+	}
 /* @Content
 ** Feedback form
 */
