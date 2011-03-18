@@ -611,6 +611,7 @@ BODY {
 */
 .aleft {float:left; margin-right:20px;}
 .aright {float:right; margin-left:20px;}
+.YMaps {z-index:0;}
 
 /* @Content
 ** Special offers
