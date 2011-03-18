@@ -611,7 +611,6 @@ BODY {
 */
 .aleft {float:left; margin-right:20px;}
 .aright {float:right; margin-left:20px;}
-.YMaps {z-index:0;}
 
 /* @Content
 ** Special offers
@@ -931,6 +930,7 @@ color: red;
 		-moz-border-radius:10px;
 		-webkit-border-radius:10px;
 		font-size:16px;
+		z-index:1000;
 	}
 		.feedback-wrap FORM {
 			position:relative;
