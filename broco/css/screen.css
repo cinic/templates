@@ -905,7 +905,8 @@ color: red;
 .feedback {
 	position: fixed;
     right: 0;
-    top: 330px;
+    top: 50%;
+	margin-top:-53px;
 }
 	.feedback a {
 		padding:3px 0;

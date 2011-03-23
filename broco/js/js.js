@@ -46,11 +46,8 @@ $(function(){
 	bw = $("#feedback-wrap").width();
 	lf = (ww - bw) / 2;
 	tp = (wh - bh) / 2;
-	ah = $("#feedback").height();
-	atp = (wh - ah) / 2;
-	
+		
 	$('#feedback #form').load('/feedback/ #emailform');
-	$("#feedback").css({"top" : atp});
 	
 	$('#feedback a').click(function(){
 	$("#feedback-wrap").css({
