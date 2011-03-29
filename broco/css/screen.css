@@ -343,6 +343,7 @@ BODY {
     	font-size:30px;
     }
 	.sub .content H2{
+		clear:both;
     	line-height:36px;
     	font-size:18px;
     }
@@ -361,7 +362,8 @@ BODY {
 	.platform-box .small,
 	.sub .content .platform-screenshot,
 	.sub .content .cite-photo,
-	.sub .content .manager-contacts {
+	.sub .content .manager-contacts,
+	.sub .content .page-picture {
 		float:right;
 		display:inline;
 		margin:-3px -260px 0 20px;
