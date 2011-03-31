@@ -46,7 +46,12 @@ $(function(){
 	bw = $("#feedback-wrap").width();
 	lf = (ww - bw) / 2;
 	tp = (wh - bh) / 2;
-		
+	
+	var name = navigator.platform;
+	if (name.toLowerCase().match('mac') != null) {
+		$('.fbackclose').css({'left' : '-10px'});
+	};
+ 
 	$('#feedback #form').load('/feedback/ #emailform');
 	
 	$('#feedback a').click(function(){

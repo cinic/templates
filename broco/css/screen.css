@@ -925,8 +925,12 @@ color: red;
 		display:none;
 		position:fixed;
 		opacity:0;
-		width:700px;
-		height:450px;
+		max-width:1000px;
+		max-height:600px;
+		min-width:600px;
+		min-height:400px;
+		width:50%;
+		height:50%;
 		background:#FFF;
 		border:1px solid #6A6A6A;
 		border-radius:10px;
@@ -950,6 +954,10 @@ color: red;
 			}
 			.feedback-wrap DD {
 				margin-bottom:10px;
+			}
+			.feedback-wrap INPUT, 
+			.feedback-wrap TEXTAREA {
+				width:35%;
 			}
 		.feedback-wrap .fbackphoto {
 			position:absolute;
