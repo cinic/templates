@@ -343,7 +343,6 @@ BODY {
     	font-size:30px;
     }
 	.sub .content H2{
-		clear:both;
     	line-height:36px;
     	font-size:18px;
     }
@@ -697,7 +696,9 @@ color: red;
 .sub .content .navigation-for-action-or-choice,
 .sub .content .navigation-to-trading-platforms {
 	margin:18px 0;
-	width:720px;
+	padding:10px;
+	width:700px;
+	overflow:hidden;
 	}
 	.sub .content .navigation-for-action-or-choice > LI:first-child,
 	.sub .content .navigation-to-trading-platforms > LI:first-child {
