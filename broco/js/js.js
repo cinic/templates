@@ -1,4 +1,8 @@
 document.documentElement.id = "js";
+if (docClasses = document.documentElement.className.replace(/no-js/g,'js')){
+    document.documentElement.className = docClasses;
+}
+
 $(function(){
 	/*Promo Block control elements*/
 	var objHead = document.getElementsByTagName('head');
@@ -11,8 +15,11 @@ $(function(){
   	}
 	
 	$("#promo div").addClass("promo-control");
+
 	$("#promo .promo-control").click(function(){
-		$(this).removeClass("narrowed").addClass("expanded").siblings().removeClass("expanded").addClass("narrowed");
+		//$(this).removeClass("narrowed").addClass("expanded").siblings().removeClass("expanded").addClass("narrowed");
+        $(this).removeClass("narrowed").animate({className:  +' expanded'}, 'slow').siblings().removeClass("expanded").animate({className: +' narrowed'}, 'slow');
+        return false;
 	});
 	
 	$('.promo-control').children('section').children('p').wrapInner('<span class="c"/>').wrapInner('<span class="r"/>').wrapInner('<span class="l"/>');
@@ -40,30 +47,33 @@ $(function(){
 	}
 	
 	/* Feedback */
-	wh = $(window).height();
-	ww = $(window).width();
-	bh = $("#feedback-wrap").height();
-	bw = $("#feedback-wrap").width();
-	lf = (ww - bw) / 2;
-	tp = (wh - bh) / 2;
+    var fForm = $("#feedback-wrap");
+    if (fForm) {
+        wh = $(window).height();
+        ww = $(window).width();
+        bh = $("#feedback-wrap").height();
+        bw = $("#feedback-wrap").width();
+        lf = (ww - bw) / 2;
+        tp = (wh - bh) / 2;
 	
-	var name = navigator.platform;
-	if (name.toLowerCase().match('mac') != null) {
-		$('.fbackclose').css({'left' : '-10px'});
-	};
+        var name = navigator.platform;
+        if (name.toLowerCase().match('mac') != null) {
+            $('.fbackclose').css({'left' : '-10px'});
+        };
  
-	$('#feedback #form').load('/feedback/ #emailform');
+        $('#feedback #form').load('/feedback/ #emailform');
 	
-	$('#feedback a').click(function(){
-	$("#feedback-wrap").css({
-			"left" : lf,
-			"top" : tp,
-			"display" : "block"
-		}).animate({opacity: 1}, 1500);
-		return false;
-	});
-	$(".fbackclose").click(function(){
+        $('#feedback a').click(function(){
+        $("#feedback-wrap").css({
+                "left" : lf,
+                "top" : tp,
+                "display" : "block"
+            }).animate({opacity: 1}, 1500);
+            return false;
+        });
+        $(".fbackclose").click(function(){
 			$("#feedback-wrap").css({"display" : "none"}).animate({opacity:0}, 1000);
-		});
+        });
+    }
 	
 });

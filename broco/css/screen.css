@@ -119,9 +119,12 @@ BODY {
     width:980px;
     height:197px;
     }
+	#promo-newbie,
     .newbie,
     .professional,
-    .investor {
+	#promo-professional,
+    .investor,
+ 	#promo-investor {
       position:relative;
       float:left;
       display:inline;
