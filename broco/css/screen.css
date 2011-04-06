@@ -6,9 +6,9 @@
 */
 
 BODY {
-  background:#FFF;
-  font:12px/18px Verdana, 'DejaVu Sans', sans-serif;
-  }
+	background:#FFF;
+	font:12px/18px Verdana, sans-serif;
+	}
 .header-wrapper {
   margin:0 0 18px;
   padding:32px 0 0;
@@ -189,15 +189,7 @@ BODY {
       color:#FFF;
       clear:left;
       }
-    .three-promo-box HEADER A {
-      display:block;
-      height:inherit;
-      color:#FFF;
-      text-decoration:none;
-      }
-	.three-promo-box HEADER A:hover {
-		color:#FFF;
-	}
+
 	.three-promo-box .box-about {
 		position:relative;
 		left:340px;

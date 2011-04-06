@@ -44,3 +44,11 @@ TABLE {
 	border-collapse: collapse;
 	border-spacing: 0;
 	}
+
+pre, code, kbd, samp { font-family: monospace, sans-serif; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
+html { overflow-y: scroll; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+a:hover, a:active { outline: none; }
+::-moz-selection{ background: #B51111; color:#fff; text-shadow: none; }
+::selection { background:#B51111; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #FF5E99; }
