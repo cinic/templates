@@ -1,28 +1,21 @@
-document.documentElement.id = "js";
-if (docClasses = document.documentElement.className.replace(/no-js/g,'js')){
-    document.documentElement.className = docClasses;
-}
-
 $(function(){
+    $('html').removeClass('no-js').addClass('js');
 	/*Promo Block control elements*/
-	var objHead = document.getElementsByTagName('head');
-  	if (objHead[0])
-  	{
-    	var objCSS = objHead[0].appendChild(document.createElement('link'));
-    	objCSS.id = 'three-promo-box-css';
-    	objCSS.rel = 'stylesheet';
-    	objCSS.href = '/assets/templates/broco/css/promo.blocks/three.promo.box.css';
-  	}
+	var nLnk = $('.three-promo-box .newbie').parent().attr('href');
+	var pLnk = $('.three-promo-box .professional').parent().attr('href');
+	var iLnk = $('.three-promo-box .investor').parent().attr('href');
+	$('.three-promo-box div').unwrap();
+	$('.three-promo-box .box-about nav').wrapInner('<a/>');
+	$('.three-promo-box .newbie').addClass('expanded').siblings().addClass('narrowed');
+	$('.three-promo-box .newbie .box-about nav a').attr('href', nLnk);
+	$('.three-promo-box .professional .box-about nav a').attr('href', pLnk);
+	$('.three-promo-box .investor .box-about nav a').attr('href', iLnk);
+    $(".three-promo-box div").click(function(){
+        $(this).removeClass('narrowed').addClass('expanded').siblings().removeClass("expanded").removeAttr('style').addClass("narrowed");
+    });
 	
-	$("#promo div").addClass("promo-control");
-
-	$("#promo .promo-control").click(function(){
-		//$(this).removeClass("narrowed").addClass("expanded").siblings().removeClass("expanded").addClass("narrowed");
-        $(this).removeClass("narrowed").animate({className:  +' expanded'}, 'slow').siblings().removeClass("expanded").animate({className: +' narrowed'}, 'slow');
-        return false;
-	});
-	
-	$('.promo-control').children('section').children('p').wrapInner('<span class="c"/>').wrapInner('<span class="r"/>').wrapInner('<span class="l"/>');
+	$('.three-promo-box .box-about p').wrapInner('<span class="c"/>').wrapInner('<span class="r"/>').wrapInner('<span class="l"/>');
+	/*End of controls*/
 	
 	/* Add Adriver banner in .sub adv-240 */
 	new adriver("sub-adv-240", {sid: 134256, sz: "inside-page-240", pz: 0, bn: 1, bt:52});

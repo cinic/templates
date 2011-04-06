@@ -1,22 +1,26 @@
-.expanded {
+#promo .expanded {
 	width:650px;
 	cursor:auto;
 	}
-	.expanded .box-about {
+	#promo .expanded .box-about {
 		display:block;
 		}
-.expanded.investor {
+.expanded.investor,
+#promo-investor.expanded {
 	background-position:0 0;
 	}
-.narrowed {
+#promo .narrowed {
 	width:164px;
 	}
-	.narrowed.newbie {
+	.narrowed.newbie,
+	#promo-newbie.narrowed {
 		background-position: -138px -394px;
 		}
-	.narrowed.professional {
+	.narrowed.professional,
+	#promo-professional.narrowed {
 		background-position:-30px -197px;
 		}
-	.narrowed.investor {
+	.narrowed.investor,
+	#promo-investor.narrowed {
 		background-position:-120px 0;
 		}

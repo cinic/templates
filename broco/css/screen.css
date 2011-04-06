@@ -93,14 +93,12 @@ BODY {
 ** Content Main Page
 */
 .content-wrapper {
-  margin:0 0 30px;
-  overflow:hidden;
+	margin:0 0 30px;
+	overflow:hidden;
 }
 .content {
-	float:none;
-  margin:0 auto;
-  width:980px;
-  clear:both;
+	margin:0 auto;
+	width:980px;
   }
 .content TIME {
     font-size:10px;
@@ -117,14 +115,36 @@ BODY {
   .three-promo-box {
     margin:0 0 18px;
     width:980px;
-    height:197px;
+    height:196px;
+	box-shadow:0 2px 4px rgba(0,0,0,.7);
+	-moz-box-shadow:0 2px 4px rgba(0,0,0,.7);
+	-webkit-box-shadow:0 2px 4px rgba(0,0,0,.7);
     }
-	#promo-newbie,
+	.js .three-promo-box .expanded {
+		width:650px;
+		cursor:auto;
+		}
+		.js .three-promo-box .expanded .box-about {
+			display:block;
+			}
+	.js .expanded.investor {
+		background-position:0 0;
+		}
+	.js .three-promo-box .narrowed {
+		width:164px;
+		}
+		.js .narrowed.newbie {
+			background-position: -138px -394px;
+			}
+		.js .narrowed.professional {
+			background-position:-30px -197px;
+			}
+		.js .narrowed.investor {
+			background-position:-120px 0;
+			}
     .newbie,
     .professional,
-	#promo-professional,
-    .investor,
- 	#promo-investor {
+    .investor {
       position:relative;
       float:left;
       display:inline;
@@ -141,11 +161,14 @@ BODY {
     .newbie {
       background-position:0 -394px;
     }
+	.investor {
+      float:right;
+    }
     .three-promo-box HEADER {
       position:absolute;
       bottom:0;
       }
-    .main .three-promo-box HEADER H2 {
+	.main .three-promo-box HEADER H2 {
       float:left;
       display:inline;
       margin:0;
@@ -154,16 +177,16 @@ BODY {
       font-family:'PT Sans Narrow';
       font-size:22px;
       background:#000;
-	border:0;
+		background:rgba(0,0,0,.5);
+	  border:0;
       color:#FFF;
-      opacity:.5;
       text-transform:uppercase;
       }
     .three-promo-box HEADER P {
       padding:2px 6px 14px;
       background:#000;
+		background:rgba(0,0,0,.7);
       color:#FFF;
-      opacity:.7;
       clear:left;
       }
     .three-promo-box HEADER A {
@@ -172,6 +195,9 @@ BODY {
       color:#FFF;
       text-decoration:none;
       }
+	.three-promo-box HEADER A:hover {
+		color:#FFF;
+	}
 	.three-promo-box .box-about {
 		position:relative;
 		left:340px;
@@ -203,7 +229,7 @@ BODY {
 			display:inline;
 			margin:18px 0;
 			background:#000;
-			opacity:.7;
+			background:rgba(0,0,0,.7);
 			}
 		.three-promo-box .box-about NAV A {
 			display:block;
@@ -212,6 +238,10 @@ BODY {
 			line-height:36px;
 			color:#FFF;
 			text-transform:uppercase;
+			text-decoration:none;
+			}
+		.three-promo-box .box-about NAV A:hover {
+			background:#000;
 			}
 
   .main .content H2,
@@ -326,9 +356,9 @@ BODY {
 }
 .sub .content {
 	position:relative;
-	float:left;
+	float:right;
 	display:inline;
-	margin:0 -740px 18px 260px;
+	margin:0 260px 18px 0;
 	width:460px;
 }
 	.sub .content HEADER {
@@ -458,7 +488,7 @@ BODY {
 .aside {
 	float:left;
 	display:inline;
-	margin:0 740px 18px 0;
+	margin:0 0 18px;
 	padding:8px 0;
 	width:240px;
 	}
@@ -579,6 +609,7 @@ BODY {
 	width:100%;
 	clear:both;
 	color:#555;
+	overflow:hidden;
 }
 	.bread-crumbs .crumb-home {
 		float:left;
