@@ -42,6 +42,12 @@ $(function(){
 	/* Feedback */
     var fForm = $("#feedback-wrap");
     if (fForm) {
+		var wh = $(window).height();
+        var ww = $(window).width();
+        var bh = $("#feedback-wrap").height();
+        var bw = $("#feedback-wrap").width();
+        var lf = (ww - bw) / 2;
+        var tp = (wh - bh) / 2;
         var name = navigator.platform;
         if (name.toLowerCase().match('mac') != null) {
             $('.fbackclose').css({'left' : '-10px'});
@@ -50,12 +56,6 @@ $(function(){
         $('#feedback #form').load('/feedback/ #emailform');
 	
         $('#feedback a').click(function(){
-			wh = $(window).height();
-	        ww = $(window).width();
-	        bh = $("#feedback-wrap").height();
-	        bw = $("#feedback-wrap").width();
-	        lf = (ww - bw) / 2;
-	        tp = (wh - bh) / 2;
         $("#feedback-wrap").css({
                 "left" : lf,
                 "top" : tp,
