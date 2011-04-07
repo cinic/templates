@@ -18,8 +18,11 @@ $(function(){
 	/*End of controls*/
 	
 	/* Add Adriver banner in .sub adv-240 */
-	new adriver("sub-adv-240", {sid: 134256, sz: "inside-page-240", pz: 0, bn: 1, bt:52});
 	
+	//var subBanner240 = 	new adriver("sub-adv-240", {sid: 134256, sz: "inside-page-240", pz: 0, bn: 1, bt:52});
+	if(window.adriver) {
+		new adriver("sub-adv-240", {sid: 134256, sz: "inside-page-240", pz: 0, bn: 1, bt:52});
+	}
 	/* Switcher for trading conditions */
 	if (location.toString().match("/brokerage-services/")) {
 		$("dl#tabs dt").click(function(){
