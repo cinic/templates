@@ -1027,6 +1027,7 @@ color: red;
 	.vcard .pn {
 		margin:10px 0;
 		display:block;
+		font-size:10px;
 		}
 	.vcard .email,
 	.vcard .skype,
